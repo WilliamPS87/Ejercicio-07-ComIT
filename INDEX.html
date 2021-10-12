@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap-5.1.1-dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora Online</title>
+    <script src="app.js"></script>
+    <div class="container-fluid">
+        <div class="img-fluid" >
+         <center><img src="./ARCHIVOS/barra.jpg" title="BarraHorizontal" style="width: 80%;" alt="Responsive image"></center>
+         </div>
+        </div>   
+</head>
+<body> <br> 
+    
+    <!--Formula de números-->
+    <form action="#">
+    <p class="border text-center">
+    <label for="">SUMA</label><br>
+    <input type="text" id="n1" placeholder="Escribe un número"> + <input type="text" id="n2" placeholder="Escribe un número">
+    <input type="button" name="name" value="Calcular" onclick='pluss();'>  
+    <input type="reset" value="Borrar">
+    <input type="text" name="resultado1" id="resultado1" disabled style="text-align: center;" placeholder="Resultado">
+</p>
+<p class="border text-center">
+    <label for="">RESTA</label><br>
+    <input type="text" id="n3" placeholder="Escribe un número"> - <input type="text" id="n4" placeholder="Escribe un número">
+    <input type="button" name="name" value="Calcular" onclick='resta();'>  
+    <input type="reset" value="Borrar">
+    <input type="text" name="resultado2" id="resultado2" disabled style="text-align: center;" placeholder="Resultado">
+</p>
+<p class="border text-center">
+    <label for="">MULTIPLICACIÓN</label><br>
+    <input type="text" id="n5" placeholder="Escribe un número"> x <input type="text" id="n6" placeholder="Escribe un número">
+    <input type="button" name="name" value="Calcular" onclick='multiplica();'>  
+    <input type="reset" value="Borrar">
+    <input type="text" name="resultado3" id="resultado3" disabled style="text-align: center;" placeholder="Resultado">
+</p>
+<p class="border text-center">
+    <label for="">DIVISIÓN</label><br>
+    <input type="text" id="n7" placeholder="Escribe un número"> / <input type="text" id="n8" placeholder="Escribe un número">
+    <input type="button" name="name" value="Calcular" onclick='divide();'>  
+    <input type="reset" value="Borrar">
+    <input type="text" name="resultado4" id="resultado4" disabled style="text-align: center;" placeholder="Resultado">
+</p>
+<p class="border text-center">
+    <label for="">PORCENTAJE</label><br>
+    <input type="text" id="n9" placeholder="Escribe un número"> % <input type="text" id="n10" placeholder="Escribe un número">
+    <input type="button" name="name" value="Calcular" onclick='porciento();'>  
+    <input type="reset" value="Borrar">
+    <input type="text" name="resultado5" id="resultado5" disabled style="text-align: center;" placeholder="Resultado">
+</p>
+</form>     
+<form action="#">
+    <p class="border text-center">
+    <label for="">Funciones Multiples</label><br>
+    <input type="text" id="n11" placeholder="Escribe un número">
+    <input type="text" id="n12" placeholder="Escribe un número">
+    <select id="op">
+        <option>Elige la operación</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+                </select>
+    <button type="button" onclick='r();'>Calcular</button>
+    <input type="reset" value="Borrar">
+    <input type="text" id="r" disabled style="text-align: center;" placeholder="Resultado">
+</p>
+</form>
+
+<br>
+</body>
+</html>
