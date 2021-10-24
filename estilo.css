@@ -14,7 +14,30 @@ body form p label{
 body form input{
      font-weight: bold;
 }
-body form p select option{
+body div div select option{
     font-weight: bolder;
     text-align: center;
+}
+body div div label{
+    font-weight: bolder;
+    color: red;
+    padding-left: 150px;
+}
+body div div input{
+    font-weight: bold;
+    text-align: center;
+}
+body div div p label{
+    font-weight: bolder;
+    color: green;
+    padding-left: 150px;
+}
+body form div div input{
+    font-weight: bold;
+    text-align: center;
+}
+body form div div p label{
+    font-weight: bolder;
+    color: blue;
+    padding-left: 150px;
 }

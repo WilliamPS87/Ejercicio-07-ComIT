@@ -16,7 +16,7 @@
 </head>
 <body> <br> 
     
-    <!--Formula de números-->
+    <!--Calculadoras individuales-->
     <form action="#">
     <p class="border text-center">
     <label for="">SUMA</label><br>
@@ -54,27 +54,72 @@
     <input type="text" name="resultado5" id="resultado5" disabled style="text-align: center;" placeholder="Resultado">
 </p>
 </form>     
-<form action="#">
-    <p class="border text-center">
-    <label for="">Funciones Multiples</label><br>
-    <input type="text" id="n11" placeholder="Escribe un número">
-    <input type="text" id="n12" placeholder="Escribe un número">
-    <select id="op">
+<!-- Calculadora básica horizontal 01-->
+<div class="container">
+      <div class="border text-center">
+    <label for="">Funciones Multiples (Un tipo sintaxis de funciones de cálculo múltipe) </label><br>
+    <input type="number" id="n11" placeholder="Escribe un número">
+    <select id="operacion">
         <option>Elige la operación</option>
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
+        <option value="%">%</option>
                 </select>
-    <button type="button" onclick='r();'>Calcular</button>
-    <input type="reset" value="Borrar">
-    <input type="text" id="r" disabled style="text-align: center;" placeholder="Resultado">
-</p>
-</form>
+    <input type="number" id="n12" placeholder="Escribe un número">
 
-<br>
+    <button onclick="calculartodo()">Calcular</button>
+    <input type="number" id="calculartodo" placeholder="Resultado" readonly>
+    </div>
+</div><br>
+
+<!-- Calculadora básica horizontal 02-->
+<div class="container">
+    <div class="border text-center">
+    <p> 
+        <label for="">Funciones Multiples (Otro tipo sintaxis de funciones de cálculo múltipe) </label> <br>
+      <input type="text" id="n13" placeholder="Ingrese valor">
+  <select id="operacion2">
+      <option>Elige la operación</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+              </select>
+  <input type="text" id="n14" placeholder="Ingrese solo números">
+
+  <button onclick="calculartodo2()">Calcular</button>
+  <input type="text" id="calculartodo2" placeholder="Resultado" readonly>
+    </p>
+  </div>
+</div>
+
+<!-- Calculadora básica horizontal 03-->
+<form action="#">
+<div class="container">
+    <div class="border text-center">
+    <p> 
+        <label for="">Funciones Multiples (Un tipo más de sintaxis de funciones de cálculo múltipe) </label> <br>
+      <input type="text" id="n15" placeholder="Ingrese valor">
+  <select id="operacion3">
+      <option>Elige la operación</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+              </select>
+  <input type="text" id="n16" placeholder="Ingrese solo números">
+
+  <button onclick="calculartodo4()">Calcular</button>
+  <input type="text" id="calculartodo3" placeholder="Resultado" readonly>
+    </p>
+  </div>
+</div></form><br>
 </body>
 <footer>
     <a href="../EJERCICIO 07/2º CALCULADORA/calculadora2.html"><img src="../EJERCICIO 07/ARCHIVOS/icono.jpg" title="Calculadora de códigos técnicos y desconocidos" style="width: 50px;"></a>
-</footer>
+</footer><br>
 </html>

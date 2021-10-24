@@ -1,9 +1,10 @@
 //alert("Bievenidos");
-var nombreest
-nombreest = prompt("Escribir su nombre: ");
-var apeest
-apeest = prompt("Escribir su apellido: ");
-alert("El nombre del usuario que visita esta página es: " + nombreest + " " + apeest);
+
+//var nombreest
+//nombreest = prompt("Escribir su nombre: ");
+//var apeest
+//apeest = prompt("Escribir su apellido: ");
+//alert("El nombre del usuario que visita esta página es: " + nombreest + " " + apeest);
 
 function pluss(){
     var n1=parseInt(document.getElementById("n1").value);
@@ -41,23 +42,89 @@ function resta(){
  resultado5=n9/n10;
  document.getElementById("resultado5").value=resultado5;
  }
- // nueva funcion //
- function calculavarios(){
-    var n11 = parseInt(document.getElementById("n11").value);
-    var n12 = parseInt(document.getElementById("n12").value);
-    var op = document.getElementById("op").value;
-    let r;
-    if(op == '+'){
-        r=n11+n12;
+ // 1º funcion para calcular todo //
+const calculartodo = () =>{
+    var valor1 = parseInt(document.getElementById("n11").value);
+    var operacion = document.getElementById("operacion").value;
+    var valor2 = parseInt(document.getElementById("n12").value);
+
+    var resultado = 0;
+
+    if (operacion == "+"){
+      resultado = valor1 + valor2
     }
-    else if(op == '-') {
-        r=n11-n12;
+    if (operacion == "-"){
+      resultado = valor1 - valor2
     }
-    else if(op == '*') {
-        r=n11*n12;
+    if (operacion == "*"){
+      resultado = valor1 * valor2
     }
-    else if(op == '/'){
-        r=n11/n12;
-    document.getElementById("r").value=r;
+    if (operacion == "/"){
+      resultado = valor1 / valor2
     }
+    if (operacion == "%"){
+      resultado = valor1 % valor2
+    }
+  document.getElementById("calculartodo").value = resultado
+}
+ // 2º funcion para calcular todo //
+ const calculartodo2 = () =>{
+   var valor3 = parseFloat(document.getElementById("n13").value);
+   var operacion2 = document.getElementById("operacion2").value;
+   var valor4 = parseFloat(document.getElementById("n14").value);
+
+   var resultado2;
+
+   if (Number.isNaN(valor3) || Number.isNaN(valor4)){
+      document.getElementById("calculartodo2").value = "Error, ingrese un número";
+   } else {
+     if (operacion2 == "+"){
+      resultado2 = valor3 + valor4
+   }
+   if (operacion2 == "-"){
+      resultado2 = valor3 - valor4
+   }
+   if (operacion2 == "*"){
+      resultado2 = valor3 * valor4
+   }
+   if (operacion2 == "/"){
+     resultado2 = valor3 / valor4
+   }
+   if (operacion2 == "%"){
+      resultado2 = valor3 % valor4
+   }
+ document.getElementById("calculartodo2").value = resultado2
+   }
+}
+
+// 3º funcion para calcular todo //
+const calculartodo4 = () =>{
+  var valor5 = parseFloat(document.getElementById("n15").value);
+  var operacion3 = document.getElementById("operacion3").value;
+  var valor6 = parseFloat(document.getElementById("n16").value);
+
+  var resultado3;
+
+  if (Number.isNaN(valor5) || Number.isNaN(valor6)){
+     document.getElementById("calculartodo3").value = "Error, ingrese un número";
+  } else {
+    switch (operacion3) {
+      case "+":
+            resultado3 = valor5 + valor6;
+            break;
+         case "-":
+            resultado3 = valor5 - valor6;
+            break;
+         case "*":
+            resultado3 = valor5 * valor6;
+            break;
+         case "/":
+            resultado3 = valor5 / valor6;
+            break;
+         case "%":
+            resultado3 = valor5 % valor6;
+            break;
+    }
+   document.getElementById("calculartodo3").value = resultado3
+  }
 }
