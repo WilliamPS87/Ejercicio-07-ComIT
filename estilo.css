@@ -41,3 +41,12 @@ body form div div p label{
     color: blue;
     padding-left: 150px;
 }
+body form div p label{
+    font-weight: bolder;
+    color: blueviolet ;
+    padding-left: 150px;
+}
+body form div p input{
+    font-weight: bold;
+    text-align: center;
+}

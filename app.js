@@ -1,10 +1,10 @@
 //alert("Bievenidos");
 
-//var nombreest
-//nombreest = prompt("Escribir su nombre: ");
-//var apeest
-//apeest = prompt("Escribir su apellido: ");
-//alert("El nombre del usuario que visita esta página es: " + nombreest + " " + apeest);
+var nombreest
+nombreest = prompt("Escribir su nombre: ");
+var apeest
+apeest = prompt("Escribir su apellido: ");
+alert("El nombre del usuario que visita esta página es: " + nombreest + " " + apeest);
 
 function pluss(){
     var n1=parseInt(document.getElementById("n1").value);
@@ -127,4 +127,32 @@ const calculartodo4 = () =>{
     }
    document.getElementById("calculartodo3").value = resultado3
   }
+}
+
+// 4º funcion para calcular todo //
+const calculartodo7 = () =>{
+   var valor7 = parseFloat(document.getElementById("n17").value);
+   var operacion4 = document.getElementById("operacion4").value;
+   var valor8 = parseFloat(document.getElementById("n18").value);
+ 
+   var resultado4;
+ 
+   if (Number.isNaN(valor7) || Number.isNaN(valor8)){
+      document.getElementById("calculartodo6").value = "Error, ingrese un número";
+   } else {
+     if (operacion4 == "+"){
+      resultado4 = valor7 + valor8
+   } else if (operacion4 == "-"){
+      resultado4 = valor7 - valor8
+   } else if (operacion4 == "*"){
+      resultado4 = valor7 * valor8
+   } else if (operacion4 == "/"){
+      resultado4 = valor7 / valor8
+   } else if (operacion4 == "%"){
+      resultado4 = valor7 % valor8
+   } else {
+      resultado4 = "Error, ingrese un número"
+   }
+ document.getElementById("calculartodo6").value = resultado4
+   }
 }
